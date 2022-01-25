@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Escribe un programa para crear una nueva cadena de caracteres añadiendo "Super" al principio de una cadena que se le pide al usuario. 
+        //Si la cadena ya empieza por "Super", el resultado será la misma cadena original.
+        let busca, cadena= prompt ("Inserte una frase"), nueva_cadena="";
+        
+        document.write ("La frase original es: " + cadena + "<br>");
+
+        busca = cadena.search("Super");
+
+        if (busca == -1){
+            nueva_cadena=nueva_cadena.concat("Super", cadena);
+        }
+        else {
+            if (busca == 0)
+                nueva_cadena=cadena;
+        };
+
+        document.write ("La nueva cadena es <br> " + nueva_cadena);
+    </script>
+</body>
+</html>

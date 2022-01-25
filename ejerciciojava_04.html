@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Escribe un programa que coja los primeros 3 caracteres y los 3 últimos de una cadena dada, los junte y los muestre. 
+        //Si la longitud de la cadena es menor de 6, devolverá la cadena original.
+
+        let cadena=prompt ("Escribe una cadena: ");
+        
+        if (cadena.length<6){
+            alert(cadena);
+        }
+        else{
+            alert((cadena.substr(0,3)) + (cadena.substr((cadena.length-3), cadena.length)));
+        }
+    </script>
+</body>
+</html>

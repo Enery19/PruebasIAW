@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <script>
+        //Escribe un programa que devuelva la extensión del nombre de un fichero que se le pida al usuario.
+        let pos, extension, nombre_fichero=prompt("Nombre del fichero");
+
+        if (!nombre_fichero.includes(".")){
+            alert ("El nombre del fichero no es correcto");
+        }
+            
+        else{
+            pos=nombre_fichero.indexOf(".")
+            alert ("La extensión es:"+ nombre_fichero.substr(pos+1, nombre_fichero.length));
+        };
+    </script>
+</body>
+</html>

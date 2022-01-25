@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Definir una función que determine si la cadena de texto que se le pasa como parámetro es un palíndromo, 
+        //es decir, si se lee de la misma forma desde la izquierda y desde la derecha. 
+        //Ejemplo de palíndromo complejo: "La ruta nos aporto otro paso natural".
+
+        function pal(cad){
+            cad = cad.toLowerCase(); //poner todo en minúsculas
+            cad = cad.replace(/ /g, "") //quitar espacios
+            let ncad="";
+            for (let i = cad.length - 1; i >= 0; i--) { 
+            ncad += cad[i]};
+            if (cad == ncad){
+                alert("Esta cadena es un palíndromo.");
+            }
+            else{
+                alert("Esta cadena no es un palíndromo.");
+            }
+        }
+        pal(prompt("Introduzca una cadena para comprobar si es un palíndromo"));
+    </script>
+</body>
+</html>

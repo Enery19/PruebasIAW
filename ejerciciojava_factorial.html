@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Factorial de un número</title>
+</head>
+<body>
+    <script>
+        
+        let n = Number(prompt ("Introduce un número"));
+
+        if ( !isNaN(n) ) {
+            var r = 1;
+            for ( let i=1; i<=n; i++){
+               r = r * i;
+            }
+            alert("El factorial de " + n + " es " + r);
+        }
+        else {
+            alert("Debes introducir un número");
+        }    
+    </script>
+  
+</body>
+</html>

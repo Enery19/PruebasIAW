@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio funciones 02</title>
+</head>
+<body>
+    <script>
+//Definir una función que muestre información sobre una cadena de texto que se le pasa como argumento. 
+//A partir de la cadena que se le pasa, la función determina si esa cadena está formada sólo por mayúsculas, 
+//sólo por minúsculas o por una mezcla de ambas.
+
+        function cadena(cad){
+            if (isNaN(cad) ){
+                 if ( cad == cad.toUpperCase()){
+                     alert("La cadena solo está formada por mayúsculas");
+                 }
+                 else {
+                     if ( cad == cad.toLowerCase()){
+                        alert("La cadena solo está formada por minúsculas") 
+                     }
+                     else {
+                        alert("La cadena está formada por minúsculas y mayúsculas") 
+                     }
+                 }
+            }
+            else {
+                alert("Debe introducir una cadena")
+            }
+        }
+        cadena(prompt ("Introduzca una cadena"))
+    </script>
+</body>
+</html>

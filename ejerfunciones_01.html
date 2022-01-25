@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio funciones 01</title>
+</head>
+<body>
+    <script>
+//Escribir el código de una función a la que se pasa como parámetro un número entero y devuelve como resultado una cadena de texto que 
+//indica si el número es par o impar. Mostrar por pantalla el resultado devuelto por la función.
+
+        function par_impar(num){
+            if (!isNaN(num) ){
+                let r;
+                r = num % 2;
+                 if ( r == 0){
+                     alert(num + " es par");
+                 }
+                 else {
+                     alert(num + " es impar");
+                 }
+            }
+            else {
+                alert("Debe introducir un número")
+            }
+        }
+        par_impar(prompt ("Debe introducir un número"))
+    </script>
+</body>
+</html>

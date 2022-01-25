@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Escribe un programa que concatene dos cadenas excepto el primer carácter de cada una de ellas.
+
+        let final, cad1=prompt("Cadena 1"), cad2=prompt("Cadena 2");
+        if (cad1.length>1 && cad2.length>1){
+            final=cad1.substr(1, cad1.length)+cad2.substr(1, cad2.length);
+            alert("La cadena resultante es: " + final);
+        }
+        else {
+            alert ("La longitud de las cadenas no es correcta");
+        }
+    </script>
+</body>
+</html>
