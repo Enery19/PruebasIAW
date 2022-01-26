@@ -5,7 +5,7 @@
     <title>Ejercicio funciones 01</title>
 </head>
 <body>
-    <script type = "text/javaScript">
+    <script>
 //Escribe un programa que muestre por pantalla una tabla de multiplicar. 
 //En primer lugar se le pedirá al usuario que introduzca un número entre 2 y 10. 
 //Si el número no está entre estos dos valores, se le seguirá pidiendo hasta que introduzca el valor correcto. 
@@ -18,7 +18,11 @@ if (!isNaN(num) ){
         while ( num < 2 || num > 10){
             num = prompt("Introduce un número entero entre 2 y 10");
         }
-        
+        document.write("La tabla de multiplicar del número " + num + "</br>");
+        for (i = 1; i<=10; i++){
+		    document.write(num + " x " + i + "= " + num * i);
+            document.write("</br>");
+        }
     }
     else {
         alert("Debe introducir un número entero")

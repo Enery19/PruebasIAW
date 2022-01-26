@@ -7,7 +7,37 @@
 <body>
     <script>
 //Realiza un programa que por medio de una función nos indique si el número que ingresa el usuario es primo o no.
-//Realiza un programa que te de la opción de elegir la operación matemática que quieres realizar por medio de funciones.
+function number(n){
+    let primo ="";
+
+if (!isNaN(n) ){
+    if (n%1 == 0){
+        let i, primo;
+        i=2;
+        primo=true;
+        while(i<n){
+            if(n%i==0){
+                primo=false;
+            }
+            i++;
+        }
+        if (primo==true){
+            document.write("El número " + n + " es primo")
+        }
+        else{
+            document.write("El número " + n + " no es primo")
+        }
+    }
+    else {
+        alert("Debe introducir un número entero")
+    }
+}
+else {
+    alert("Debe introducir un número")
+}
+};
+number(prompt());
+
     </script>
 </body>
 </html>

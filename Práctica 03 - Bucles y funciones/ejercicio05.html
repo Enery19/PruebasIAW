@@ -7,7 +7,52 @@
 <body>
     <script>
 //Confecciona una función que se le pasen 3 enteros y los muestre ordenados de menor a mayor.
-//Realiza un programa que por medio de una función nos indique si el número que ingresa el usuario es primo o no.
+function number(){
+    let n1=prompt("Ingrese el primer número");
+	let n2=prompt("Ingrese el segundo número");
+	let n3=prompt("Ingrese el tercer número");
+
+    if (!isNaN(n1) && !isNaN(n2) && !isNaN(n3)){
+        if (n1 % 1 == 0 && n2 % 1 == 0 && n3 % 1 == 0){
+            if (n1 < n2 && n1 < n3){
+                document.write(n1 + " ");
+                    if (n2 < n3){
+                        document.write(n2 + " " + n3);
+                    }
+                    else {
+                        document.write(n3 + " " + n2);
+                    }
+            }
+            else{
+                if (n2 < n3){
+                    document.write(n2 + " ");
+                    if (n3 < n1){
+                        document.write(n3 + " " + n1);
+                    }
+                    else {
+                        document.write(n1 + " " + n3);
+                    }
+                }
+                else{
+                    document.write(n3 + " ");
+                    if ( n2 < n1){
+                        document.write(n2 + " " + n1);
+                    }
+                    else {
+                        document.write(n1 + " " + n2);
+                    }
+                }   
+            }
+        }
+        else {
+            alert("Debe introducir un número entero");
+        }
+    }
+    else {
+        alert("Debe introducir tres números");
+    }
+};
+number();
     </script>
 </body>
 </html>
