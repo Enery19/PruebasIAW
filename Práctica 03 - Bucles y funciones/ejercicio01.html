@@ -7,6 +7,25 @@
 <body>
     <script>
 //Escribe un programa que pida al usuario introducir un número entero mayor que 10, el cuadro de texto volverá a aparecer si el número es menor.
+
+function num10(num){
+
+    if (!isNaN(num) ){
+        if (num % 1 == 0){
+            while (num < 10){
+            num = prompt("Introduce un número mayor que 10");
+            };
+            alert ("El número es mayor que 10");
+        }
+        else {
+            alert("Debe introducir un número entero")
+        }
+    }
+    else {
+        alert("Debe introducir un número")
+        }
+    }
+num10(prompt ("Debe introducir un número mayor que 10"))
     </script>
 </body>
 </html>

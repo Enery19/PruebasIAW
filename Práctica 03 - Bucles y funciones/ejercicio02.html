@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio funciones 01</title>
+</head>
+<body>
+    <script>
+//Escribe un programa que pida al usuario introducir un número entero entre 50 y 100, 
+//el cuadro de texto volverá a aparecer si el número es menor o mayor.
+function number(num){
+
+    if (!isNaN(num) ){
+        if (num % 1 == 0){
+            while ( num < 50 || num > 100){
+                num = prompt("Introduce un número entero entre 50 y 100");
+            }
+            alert ("El número que ha introducido está entre 50 y 100")
+        }
+        else {
+            alert("Debe introducir un número entero")
+        }
+    }
+    else {
+        alert("Debe introducir un número")
+    }
+}
+number(prompt ("Debe introducir un número entre 50 y 100"))
+    </script>
+</body>
+</html>
