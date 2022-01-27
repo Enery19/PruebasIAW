@@ -6,8 +6,18 @@
 </head>
 <body>
     <script>
-
-
+//Se ingresan un conjunto de 5 alturas de personas por teclado. Mostrar la altura promedio de las personas.
+    let x=0;
+    let suma=0;
+    while (x<5){
+        let altura;
+        altura=prompt('Se ingresan un conjunto de 5 alturas en centimetros de personas por teclado. Mostrar la altura promedio de las personas.','');
+        altura=parseInt(altura);
+        suma=suma+altura;
+        x=x+1;
+    }
+    let promedio=suma/5;
+    document.write('Promedio: '+promedio);
     </script>
 </body>
 </html>
