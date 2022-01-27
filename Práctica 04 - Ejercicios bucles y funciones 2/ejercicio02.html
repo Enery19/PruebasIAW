@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio bucles2 02</title>
+</head>
+<body>
+    <script>
+//Mostrar los múltiplos de 8 hasta el valor 500. Debe aparecer en pantalla 8 -16 -24, etc.
+function tabla8_r500(){
+    let n=8;
+    for (i=0; n*i<=500 ; i++){
+        document.write( n + " x " + i + " = " + n*i +"</br>")
+    }
+};
+//tabla8_r500();
+</script>
+
+<script>
+function tabla8_m500(){
+    let n=8;
+    for (i=0; i<=500 ; i++){
+        document.write( n + " x " + i + " = " + n*i +"</br>")
+    }
+};
+</script>
+
+<script>
+let opcion = prompt("Seleccione la opción 1 (Resultado <= 500 ) o la 2 (Multiplicador = 500):");
+        switch (opcion) {
+            case "1":
+                tabla8_r500();
+                break;
+            case "2":
+                tabla8_m500();
+                break;
+            default:
+                tabla8_r500();
+                break;
+        }
+
+    </script>
+</body>
+</html>

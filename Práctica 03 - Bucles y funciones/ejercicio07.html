@@ -2,11 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ejercicio funciones 01</title>
+    <title>Ejercicio bucles 07</title>
 </head>
 <body>
+
+    <script>
+        function suma(){
+            let n1 = Number(prompt("Ingrese el primer número"));
+	        let n2 = Number(prompt("Ingrese el segundo número"));
+            let n3 = n1+n2;
+            document.write(n1 + " + " + n2 + " = " + n3)
+        }
+    </script>
+
+    <script>
+        function resta(){
+            let n1 = Number(prompt("Ingrese el primer número"));
+            let n2 = Number(prompt("Ingrese el segundo número"));
+            let n3 = n1-n2;
+            document.write(n1 + " - " + n2 + " = " + n3)
+        }
+    </script>
+
+    <script>
+        function mult(){
+            let n1 = Number(prompt("Ingrese el primer número"));
+            let n2 = Number(prompt("Ingrese el segundo número"));
+            let n3 = n1*n2;
+            document.write(n1 + " * " + n2 + " = " + n3)
+        }
+    </script>
+    <script>
+        function div(){
+            let n1 = Number(prompt("Ingrese el primer número"));
+            let n2 = Number(prompt("Ingrese el segundo número"));
+            let n3 = n1/n2;
+            document.write(n1 + " / " + n2 + " = " + n3)
+        }
+    </script>
     <script>
 //Realiza un programa que te de la opción de elegir la operación matemática que quieres realizar por medio de funciones.
+let opcion = prompt("Seleccione la opción 1. Suma | 2. Resta | 3. Multiplicación | 4. División");
+        switch (opcion) {
+            case "1":
+                suma();
+                break;
+            case "2":
+                resta();
+                break;
+            case "3":
+                mult();
+                break;
+            case "4":
+                div();
+                break;
+            default:
+                break;
+        }
     </script>
 </body>
 </html>
