@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador</title>
+</head>
+<body>
+    <!--Crear una página web en la que dispondremos un botón y cada vez que se presione, mostraremos un contador. 
+        (se mostrará el mensaje, el contador ahora vale 1, el contador vale 2, .....)-->
+    <form action="" name="contador" id="contador">
+        <label for="contador"> Pulse el botón para aumentar el contador: </label><br>
+        <input type="button" id="btn_contador" name="btn_contador" value= "Pulse para aumentar el contador" onclick="f_contador()"><br>
+        
+        <p>Número de veces que se ha pulsado el botón: <input type="text" id="text"></p>
+    </form>
+
+    <script>
+        function f_contador(){
+            let i=Number("0");
+            i=i+1;
+            document.getElementById('text').value = (i);
+        }
+    </script>
+</body>
+</html>

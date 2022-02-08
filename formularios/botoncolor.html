@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fondo de colores</title>
+</head>
+<body>
+    
+    <form name="cambiacolor" id="cambiacolor">
+        <label for="color"> Selecciona un color para el fondo de la página:</label><br>
+        <select name="c_color" id="change_color" onchange="color()">
+            <option value="yellow"> Amarillo </option>
+            <option value="#FF0000"> Rojo </option>
+            <option value="green"> Verde </option>
+            <option value="blue"> Azul </option>
+        </select>
+        <input id="btn_color" type="button" value="Modificar el Color" onclick="cambiandocolor()">
+
+        <p>Número de índice seleccionado del objeto Select: <input type="text" id="text1"></p>
+        <p>Color seleccionado <input type="text" id="text2"></p>
+        <p>Valor seleccionado <input type="text" id="text3"></p>
+
+    </form>
+
+    <script>
+        function color(){
+            let seleccion = document.getElementById ('change_color')
+            document.getElementById('text1').value = (seleccion.selectedIndex)+1;
+            document.getElementById('text2').value= seleccion.options[seleccion.selectedIndex].text;
+            document.getElementById('text3').value= seleccion.options[seleccion.selectedIndex].value;
+        }
+    </script>
+
+    <script>
+        function cambiandocolor(){
+            document.bgColor = document.getElementById('change_color').value;
+        }
+    </script>
+</body>
+</html>

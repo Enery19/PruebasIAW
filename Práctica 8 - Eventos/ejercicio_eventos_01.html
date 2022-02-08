@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tres botones</title>
+</head>
+
+<body>
+    <!--Crear una página web en la que aparecerán tres botones, se mostrará un mensaje indicando el botón pulsado.-->
+    <input id="btn_ventana1" type="button" value="1" onclick="alert('Soy el botón número 1')">
+    <br><br>
+    <input id="btn_ventana2" type="button" value="2" onclick="dos()">
+    <br><br>
+    <input id="btn_ventana3" type="button" value="3" onclick="tres()">
+    
+    
+    <script type="text/javascript">
+        function dos () {
+            var ventanaNueva = window.open();
+            ventanaNueva.document.write('Soy el botón número 2');
+        };
+    </script>
+
+    <script type="text/javascript">
+        function tres () {
+            alert('Soy el botón número 3');
+        }
+    </script>
+</body>
+</html>
