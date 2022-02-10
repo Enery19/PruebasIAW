@@ -7,8 +7,21 @@
 <body>
     <script>
 //Elaborar una función que reciba tres enteros y retorne el promedio.
+function funcion_pomedio(){
 
-
+let x=0;
+let suma=0;
+while (x<3){
+    let altura;
+    altura=prompt('Se ingresa 3 números enteros:');
+    altura=parseInt(altura);
+    suma=suma+altura;
+    x=x+1;
+}
+let promedio=suma/3;
+document.write('Promedio: '+promedio);
+}
+funcion_pomedio();
     </script>
 </body>
 </html>

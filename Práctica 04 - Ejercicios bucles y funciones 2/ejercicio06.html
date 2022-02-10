@@ -6,7 +6,26 @@
 </head>
 <body>
     <script>
-//Desarrollar un programa que solicite la carga de 10 números e imprima la suma de lo últimos 5 valores ingresados.b
+//Desarrollar un programa que solicite la carga de 10 números e imprima la suma de lo últimos 5 valores ingresados.
+
+function cinco(){
+
+let x=0;
+let suma=0;
+    while (x<5){
+        let valor;
+        valor=prompt('Se ingresa 10 números enteros:');
+        x=x+1;
+    }
+    while (x>=5 && x<10){
+        valor= Number(prompt('Se ingresa 10 números enteros:'));
+        suma=suma+valor;
+        x=x+1;
+    }
+document.write('Súma de últimos dígitos: '+suma);
+}
+
+cinco();
 
     </script>
 </body>

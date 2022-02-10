@@ -11,7 +11,7 @@ form{
 	margin:32px auto;
 }
 
-form label, form input[type="text"],form input[type="email"],form input[type="submit"]{
+form label, form input[type="text"],form input[type="email"],form input[type="submit"], form input[type="reset"]{
 	display:inline-block;
 	/*width:40%;*/
 	padding:4px 8px;

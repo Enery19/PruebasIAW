@@ -4,33 +4,49 @@
     <meta charset="UTF-8">
     <title>Formulario</title>
     <link rel="stylesheet" href="estilo_form.css">
+    <script src="validacion.js"></script>
 
 </head>
 <body>
     <form action="" id="formulario">
         <label for="" id="lbl_name"> Nombre: </label>
         <input type="text" id="ipt_name"><br>
+        
         <label for="" id="lbl_surname"> Apellidos: </label>
         <input type="text" id="ipt_surname"><br>
+
         <label for="" id="lbl_email"> E-mail</label>
         <input type="email" id="ipt_email"><br>
+
+        <input type="radio" value="m" id="rd_m" name="rd_sex" checked><label for="">Mujer</label><br>
         <input type="radio" value="h" id="rd_h" name="rd_sex"><label for="">Hombre</label><br>
-        <input type="radio" value="m" id="rd_m" name="rd_sex"><label for="">Mujer</label><br>
+
         <label for="" id="lbl_txt_area">Ingresa aqui tu mensaje</label><br>
         <textarea name="txt_area" id="txt_area" cols="30" rows="10">--Tu mensaje aqui--</textarea><br>
+
         <input type="checkbox" id="chk_publi" name="chk_publi"> <label for="" id="lbl_publi" name="lbl_publi"> Deseo recibir publicidad en mi email.</label><br>
+       
         <label for="" id="lbl_procedencia" name="lbl_procedencia">Procedencia:</label><br>
         <select name="slct_procedencia" id="slct_procedencia">
-            <option value="ue"> Unión Europea </option>
-            <option value="nam"> América del Norte </option>
-            <option value="sam"> América del Sur </option>
-            <option value="as"> Ásia </option>
-            <option value="af"> África </option>
-            <option value="oc"> Oceanía </option>
+            <optgroup label="Unión Europea">
+                <option value="rue"> Resto de la Unión Europea </option>
+                <option value="es"> España </option>
+                <option value="uk"> Reino Unido </option>
+            </optgroup >
+            <optgroup label="Resto del mundo">
+                <option value="nam"> América del Norte </option>
+                <option value="sam"> América del Sur </option>
+                <option value="as"> Ásia </option>
+                <option value="af"> África </option>
+                <option value="oc"> Oceanía </option>
+            </optgroup>   
         </select><br>
+
         <label for="" name="lbl_archivo" id="lbl_archivo">Ingresa el archivo que quieras adjuntar</label><br>
         <input type="file"><br>
-        <input type="submit" name="btn_enviar" id="btn_enviar"> <input type="reset" name="btn_borrar" id="btn_borrar" value="Borrar">
+
+        <input type="submit" name="btn_enviar" id="btn_enviar">
+        <input type="reset" name="btn_borrar" id="btn_borrar" value="Borrar">
     </form>
 </body>
 </html>

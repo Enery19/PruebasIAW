@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ejercicio bucles2 03</title>
+    <title>Ejercicio bucles2 07</title>
 </head>
 <body>
     <script>
@@ -11,6 +11,45 @@
 //b) La cantidad de valores positivos ingresados.
 //c) La cantidad de múltiplos de 15.
 //d) El valor acumulado de los números ingresados que son pares.
+
+function valores(){
+
+var x=0;
+var cant1=0;
+var cant2=0;
+var cant3=0;
+var cant4=0;
+    while (x<10){ 
+        var valor;
+        valor=prompt('Ingrese valores','');
+        if (valor<0){
+            cant1=cant1+1;
+        }
+        else {
+            if (valor>=0){
+                cant2=cant2+1;
+                let resto01 = valor % 15;
+                if (resto01 == 0)
+                {
+                    cant3=cant3+1;
+                };
+                let resto02 = valor % 2;
+                if ( resto02 == 0 ){
+                    cant4=cant4+valor;
+                }
+            }
+        }
+        x=x+1;
+    }
+document.write('Números negativos: '+cant1);
+document.write('<br>');
+document.write('Números positivos: '+cant2);
+document.write('<br>');
+document.write('Múltiplos de 15: '+cant3);
+document.write('<br>');
+document.write('Sumatoria de números pares: '+cant4);
+}
+valores();
 
     </script>
 </body>
